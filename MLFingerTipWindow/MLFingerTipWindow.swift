@@ -137,7 +137,7 @@ class MLFingerTipWindow: UIWindow {
           }
           
           if touchView == nil && touch.element.phase != .stationary {
-            touchView = MLFingerTipView(self.touchImage())
+            touchView = MLFingerTipView(image: self.touchImage())
             self.overlayWindow.addSubview(touchView!)
           }
           
@@ -248,6 +248,5 @@ class MLFingerTipWindow: UIWindow {
     
     return false
   }
-  
   
 }

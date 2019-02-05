@@ -14,4 +14,12 @@ class MLFingerTipView : UIImageView {
   var shouldAutomaticallyRemoveAfterTimeout: Bool = false
   var fadingOut: Bool = false
   
+  override init(image: UIImage?) {
+    super.init(image: image)
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
 }
